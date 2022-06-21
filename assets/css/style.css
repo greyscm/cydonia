@@ -60,7 +60,8 @@ li {
 }
 
 .Hero{
-    background-color: #dee5ef;
+   
+    background-image: linear-gradient(to right, #44afda, #ff86f5);
     display: grid;
     grid-template-rows: 40% 60%;
     gap: 1.6em;
@@ -73,7 +74,7 @@ li {
 }
 
 .MainGrid .Hero__Imagen{
-
+    transform: skewY(-10deg);
 }
 
 .MainGrid .Hero__Boton{
@@ -83,6 +84,7 @@ li {
     height:fit-content;
     width:max-content;
     margin-top: 1em;
+    transition: height 2s, width 1s;
         
 }
 
