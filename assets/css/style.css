@@ -22,7 +22,7 @@ position: sticky;
 display: grid;
 grid-template-rows: repeat(2, 1fr);
 width: 100%;
-background-color: #DFE5ED;
+
 }
 
 .Navbar{
@@ -60,8 +60,7 @@ li {
 }
 
 .Hero{
-   
-    background-image: linear-gradient(to right, #44afda, #ff86f5);
+    background-image: linear-gradient(to right top, #f4a6d4, #e9ace1, #dbb2ec, #ccb8f5, #bcbefa, #afc7ff, #a4cfff, #9dd6ff, #9de1ff, #a2ecff, #acf6fd, #bbfffb);
     display: grid;
     grid-template-rows: 40% 60%;
     gap: 1.6em;
@@ -74,7 +73,18 @@ li {
 }
 
 .MainGrid .Hero__Imagen{
-    transform: skewY(-10deg);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 .MainGrid .Hero__Boton{
@@ -194,7 +204,7 @@ top: 0px;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 width: 100%;
-background-color: #DFE5ED;
+
 }
 
 .Navbar{
@@ -232,7 +242,7 @@ li {
 }
 
 .Hero{
-    background-color: #dee5ef;
+    background-image: linear-gradient(to right top, #f4a6d4, #e9ace1, #dbb2ec, #ccb8f5, #bcbefa, #afc7ff, #a4cfff, #9dd6ff, #9de1ff, #a2ecff, #acf6fd, #bbfffb);
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 1.6em;
@@ -244,8 +254,36 @@ li {
     padding-left: 3em;
 }
 
-.MainGrid .Hero__Imagen{
+.MainGrid .Hero__Imagenes{
+    position: relative; left: 0; top: 0;
+}
 
+.MainGrid .Hero__Imagenes .Planeta{
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 50px;
+    margin-top: 55px;
+    position:absolute;
+    z-index: 1;
+}
+
+.MainGrid .Hero__Imagenes .Cohete{
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 .MainGrid .Hero__Boton{
