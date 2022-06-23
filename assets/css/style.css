@@ -242,7 +242,7 @@ li {
 }
 
 .Hero{
-    background-image: linear-gradient(to right top, #f4a6d4, #e9ace1, #dbb2ec, #ccb8f5, #bcbefa, #afc7ff, #a4cfff, #9dd6ff, #9de1ff, #a2ecff, #acf6fd, #bbfffb);
+    background-image: linear-gradient(to right top, #ff8bcf, #f0a1e7, #e2b6f6, #d7c8fe, #d4d7ff, #ccdfff, #c8e7ff, #c9edff, #b9f2ff, #a8f6ff, #98fbff, #8bfff8);
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 1.6em;
