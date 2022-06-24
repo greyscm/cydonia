@@ -186,6 +186,7 @@ background-color: #DFE4EE;
     }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -196,46 +197,64 @@ color: #333333;
 background-color: #FFFFFF;
 } 
 
+li, a{ 
+    font-weight: 500;
+    font-size: 16px;
+    color: #555555;
+    text-decoration: none;
+}
+
 /* Estilo Barra Navegadora */
 
 header {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 30px 10%;
 position: sticky;
-top: 0px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-width: 100%;
-
+background-color: #ffffff;
 }
 
-.Navbar{
-    padding: 20px;
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    
 }
 
-.Navbar img {
-
-}
-
-.navbar_List {
+.nav_list{
 list-style-type: none;
-text-align: left;
-font-size: 100%;
 }
 
-ul {
-    display:inline;
-    font-size: 100%;
-    text-align: left;
-    justify-items: end;
-    }
+.nav_list li {
+display: inline-block;
+padding: 0px 20px;
+}
 
-li {
-    display: inline;
-    width: 15%;
-    position: relative;
+.nav_list li a{
+    transition: all 0.3 ease 0s;
+}
+
+.nav_list li a:hover{
+    color: #8bfff8;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    font-weight: 500;
     font-size: 16px;
-    }
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
 /* Estilo Hero Banner */
 
 .MainGrid{
