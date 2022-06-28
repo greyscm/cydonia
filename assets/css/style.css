@@ -25,6 +25,10 @@ width: 100%;
 
 }
 
+.logo{
+ float: left;
+}
+
 .Navbar{
     padding: 20px;
 }
@@ -181,9 +185,6 @@ background-color: #DFE4EE;
 
 /* Estilo Desktop*/
 @media screen and (min-width: 1200px) {
-    .body{
-        background-color: #333333;
-    }
 
 * {
     box-sizing: border-box;
@@ -192,9 +193,9 @@ background-color: #DFE4EE;
 }
 
 body {
-font-family: "Montserrat";
-color: #333333;
-background-color: #FFFFFF;
+    font-family: "Montserrat";
+    color: #333333;
+    background-color: #FFFFFF;
 } 
 
 li, a{ 
@@ -206,36 +207,47 @@ li, a{
 
 /* Estilo Barra Navegadora */
 
-header {
-display: flex;
-justify-content: flex-end;
-align-items: center;
-padding: 30px 10%;
-position: sticky;
-background-color: #ffffff;
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #e2e2e2;
+    min-height: 8vh;
+    font-family: "Montserrat", sans-serif;
 }
 
 .logo {
     cursor: pointer;
-    margin-right: auto;
-    
 }
 
-.nav_list{
-list-style-type: none;
+.nav__list{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
 
-.nav_list li {
-display: inline-block;
-padding: 0px 20px;
+.nav__list li {
+    list-style-type: none;
 }
 
-.nav_list li a{
+.nav__list a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.nav__list li a:hover:not(.active){
+   color: #5d51dc;
+}
+
+.nav__list li a.active{
+    color: #5d51dc;
+}
+
+.nav__list li a{
     transition: all 0.3 ease 0s;
-}
-
-.nav_list li a:hover{
-    color: #8bfff8;
 }
 
 button{
