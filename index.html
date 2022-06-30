@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
   <title>Cydonia - Transformación Digital</title>
@@ -19,9 +19,14 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i">
 	
   <!-- link css -->
-	<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
+  
 
-    <!-- link Biblioteca Animaciones-->
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+  <!-- link Biblioteca Animaciones-->
 	<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 
 </head>
@@ -29,16 +34,32 @@
 <body>
 
 <!-- ======= Header ======= -->
-<header>
-  <nav>
-    <img class="logo" href="index.html"><img src="assets/img/logo_horizontal.png" alt="Logo Cydonia" width="120">
-      <ul class="nav__list">
-        <li><a  class="active" href="index.html">Home</a></li>
-        <li><a  href="pages/servicios.html">Servicios</a></li>
-        <li><a  href="pages/proyectos.html">Proyectos</a></li>
-        <li><a  href="pages/nosotros.html">Nosotros</a></li>
-        <li><a  class="cta" href="pages/contacto.html"><button>Contacto</button></a></li>
-      </ul>
+<header id="header" class="sticky-top">
+  <nav class="navbar navbar-expand-sm" id="navbar">
+    <div class="container-fluid">
+        <a id="logo" class="navbar-brand" href="index.html"> <img src="assets/img/logo_horizontal.png" alt="Logo Cydonia" width="120"></a>
+
+        <button class="navbar-toggler" 
+            type="button"   
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav__list">
+                <li class="nav-item"><a  class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a  class="nav-link" href="pages/servicios.html">Servicios</a></li>
+                <li class="nav-item"><a  class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a  class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a  class="nav-link" href="pages/contacto.html"><button>Contacto</button></a></li>
+            </ul>
+        </div>
+    </div>
   </nav> 
 </header>
 <!-- ======= End Header ======= -->
@@ -179,8 +200,14 @@
   &copy; Copyright <strong><span>Cydonia</span></strong>. Todos los derechos reservados.
 </div>
 
+
+
 </footer>                        
 <!-- End Footer -->    
+
+<!-- Scripts -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 <script src="js/wow.min.js"></script>
 <script> new WOW().init();</script>
