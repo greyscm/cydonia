@@ -42,29 +42,22 @@ li a {
   width: 20%;
   align-items: center;
 }
-
 #nav__list li {
   list-style-type: none;
 }
-
-#nav__list a {
+#nav__list li a {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 14px;
   padding: 14px 16px;
-}
-
-#nav__list li a:hover:not(.active) {
-  color: #5d51dc;
-}
-
-#nav__list li a.active {
-  color: #5d51dc;
-}
-
-#nav__list li a {
   transition: all 0.3 ease 0s;
+}
+#nav__list li ahover:not(.active) {
+  color: #5d51dc;
+}
+#nav__list li a .active {
+  color: #5d51dc;
 }
 
 button {
@@ -79,13 +72,12 @@ button {
   color: #FFFFFF;
   text-decoration: none;
 }
-
-button:hover {
+buttonhover {
   background-color: rgba(82, 119, 240, 0.8);
 }
 
 /* Estilo Hero Banner */
-.Hero {
+.MainGrid .Hero {
   background-image: linear-gradient(to right top, #ff8bcf, #f0a1e7, #e2b6f6, #d7c8fe, #d4d7ff, #ccdfff, #c8e7ff, #c9edff, #b9f2ff, #a8f6ff, #98fbff, #8bfff8);
   display: grid;
   grid-template-columns: 40% 60%;
@@ -93,17 +85,14 @@ button:hover {
   align-items: center;
   justify-items: center;
 }
-
 .MainGrid .Hero__Titulo {
   padding-left: 3em;
 }
-
 .MainGrid .Hero__Imagenes {
   position: relative;
   left: 0;
   top: 0;
 }
-
 .MainGrid .Hero__Imagenes .Planeta {
   -webkit-animation-name: floating;
           animation-name: floating;
@@ -118,7 +107,6 @@ button:hover {
   position: absolute;
   z-index: 1;
 }
-
 .MainGrid .Hero__Imagenes .Cohete {
   -webkit-animation-name: floating;
           animation-name: floating;
@@ -133,7 +121,6 @@ button:hover {
   position: relative;
   z-index: 2;
 }
-
 @-webkit-keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -145,7 +132,6 @@ button:hover {
     transform: translate(0, 0px);
   }
 }
-
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
@@ -169,7 +155,6 @@ button:hover {
   width: max-content;
   margin-top: 1em;
 }
-
 .MainGrid .Hero__Boton a {
   color: white !important;
 }

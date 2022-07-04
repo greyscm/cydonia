@@ -1,8 +1,11 @@
 // Variables
 $color-principal: #cccccc;
 $color-titulos: #ccc;
-$color-parrafo: #ccc;
-$color-fondo: #ccc;
+$color-parrafo: #333333;
+$color-fondo: #FFFFFF;
+$color-fondo2: #DFE4EE;
+$fondo-gradiente: linear-gradient(to right top, #ff8bcf, #f0a1e7, #e2b6f6, #d7c8fe, #d4d7ff, #ccdfff, #c8e7ff, #c9edff, #b9f2ff, #a8f6ff, #98fbff, #8bfff8);
+
 
 
 // Estilo Global
@@ -57,30 +60,27 @@ $color-fondo: #ccc;
         align-content: flex-end;
         width: 20%;
         align-items: center;
-    }
-    
-    #nav__list li {
-        list-style-type: none;
-    }
-    
-    #nav__list a{
-        text-decoration: none;
-        letter-spacing: 2px;
-        font-weight: bold;
-        font-size: 14px;
-        padding: 14px 16px;
-    }
-    
-    #nav__list li a:hover:not(.active){
-       color: #5d51dc;
-    }
-    
-    #nav__list li a.active{
-        color: #5d51dc;
-    }
-    
-    #nav__list li a{
-        transition: all 0.3 ease 0s;
+
+        li {
+            list-style-type: none;
+        
+            a{
+                text-decoration: none;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 14px 16px;
+                transition: all 0.3 ease 0s;
+
+                &hover:not(.active){
+                    color: #5d51dc;
+                 }
+
+                .active{
+                color: #5d51dc;
+                }
+            }    
+        }
     }
     
     button{
@@ -94,74 +94,76 @@ $color-fondo: #ccc;
         font-size: 16px;
         color: #FFFFFF;
         text-decoration: none;
+
+        &hover{
+        background-color: rgba(82, 119, 240, 0.8);
+        }
     }
     
-    button:hover{
-        background-color: rgba(82, 119, 240, 0.8);
-    }
+
     /* Estilo Hero Banner */
     
     .MainGrid{
-    }
+
+        .Hero{
+            background-image: $fondo-gradiente;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 1.6em;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .Hero__Titulo{
+            padding-left: 3em;
+        }
+
+        .Hero__Imagenes{
+            position: relative; left: 0; top: 0;
+
+            .Planeta{
+                animation-name: floating;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                margin-left: 50px;
+                margin-top: 55px;
+                position:absolute;
+                z-index: 1;
+            }
     
-    .Hero{
-        background-image: linear-gradient(to right top, #ff8bcf, #f0a1e7, #e2b6f6, #d7c8fe, #d4d7ff, #ccdfff, #c8e7ff, #c9edff, #b9f2ff, #a8f6ff, #98fbff, #8bfff8);
-        display: grid;
-        grid-template-columns: 40% 60%;
-        gap: 1.6em;
-        align-items: center;
-        justify-items: center;
-    }
-    
-    .MainGrid .Hero__Titulo{
-        padding-left: 3em;
-    }
-    
-    .MainGrid .Hero__Imagenes{
-        position: relative; left: 0; top: 0;
-    }
-    
-    .MainGrid .Hero__Imagenes .Planeta{
-        animation-name: floating;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        margin-left: 50px;
-        margin-top: 55px;
-        position:absolute;
-        z-index: 1;
-    }
-    
-    .MainGrid .Hero__Imagenes .Cohete{
-        animation-name: floating;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        margin-left: 30px;
-        margin-top: 5px;
-        position: relative;
-        z-index: 2;
-    }
-    
-    @keyframes floating {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 15px); }
-        100%   { transform: translate(0, -0px); }   
-    }
-    
-    .MainGrid .Hero__Boton{
-        background-color: #5d51dc;
-        border-radius: 20px;
-        text-align: center;
-        height:fit-content;
-        width:max-content;
-        margin-top: 1em;
+            .Cohete{
+                animation-name: floating;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                margin-left: 30px;
+                margin-top: 5px;
+                position: relative;
+                z-index: 2;
+            }
             
+            @keyframes floating {
+                0% { transform: translate(0,  0px); }
+                50%  { transform: translate(0, 15px); }
+                100%   { transform: translate(0, -0px); }   
+            }
+        }
+        
+        .Hero__Boton{
+            background-color: #5d51dc;
+            border-radius: 20px;
+            text-align: center;
+            height:fit-content;
+            width:max-content;
+            margin-top: 1em;
+                
+            a{
+                color: white !important;
+            }
+        }
     }
-    
-    .MainGrid .Hero__Boton a{
-        color: white !important;
-    }
+
     
     /* Estilo Texto Dinamico*/
     
@@ -195,7 +197,7 @@ $color-fondo: #ccc;
     }
     
     .Servicios .Card{
-    background-color: #FFFFFF;
+    background-color: $color-fondo;
     border-radius: 30px;
     margin: 1em 1em 1em 1em;
     padding: 1em 1em 1em 1em;
@@ -218,6 +220,6 @@ $color-fondo: #ccc;
     }
     
     #footer{
-    background-color: #DFE4EE;
+    background-color: $color-fondo2;
     }
     
