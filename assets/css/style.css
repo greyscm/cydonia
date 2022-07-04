@@ -182,16 +182,13 @@ button:hover{
 
 .Servicios {
 background-color: #DFE5ED;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
+
 }
 
 .Servicios .Card{
 background-color: #FFFFFF;
 border-radius: 30px;
 margin: 1em 1em 1em 1em;
-display: grid;
-grid-template-rows: 4;
 padding: 1em 1em 1em 1em;
 }
 
@@ -211,17 +208,6 @@ margin-bottom: 1em;
     margin-bottom: 1em;
 }
 
-.Boton {
-background-color: #5d51dc;
-border-radius: 20px;
-color: white;
-text-align: center;
-height: fit-content;
-width:100px;
-justify-self: flex-end;
-}
-
-.footer{
+#footer{
 background-color: #DFE4EE;
-}
 }

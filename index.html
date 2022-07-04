@@ -56,7 +56,7 @@
                 <li class="nav-item"><a  class="nav-link" href="pages/servicios.html">Servicios</a></li>
                 <li class="nav-item"><a  class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
                 <li class="nav-item"><a  class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
-                <li class="nav-item"><a  class="nav-link" href="pages/contacto.html"><button>Contacto</button></a></li>
+                <li class="nav-item"><a  class="nav-link" href="pages/contacto.html"><button class="btn btn-primary" type="button">Contacto</button></a></li>
             </ul>
         </div>
     </div>
@@ -96,12 +96,68 @@
 </section>
 
 <!-- ======= Servicios ======= -->
-<div class="Titulo">
-  <h2>Nuestros servicios</h2>
-</div>
 
-<section class="Servicios">
-  
+<section >
+
+  <div class="Servicios" class="container">
+    <div class="row">
+
+      <div class="Titulo">
+        <h2>Nuestros servicios</h2>
+      </div>
+
+    <div class="col-3">
+      <div class="Card" style="width: 18rem;">
+        <img class= "Card__Img" src="assets/img/Desarrollo-Web.png" class="card-img-top" alt="Desarrollo_web">
+        <div class="card-body">
+          <h5 class="Card_Tittle" class="card-title">Desarrollo Web</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo quos illum enim labore iusto molestias deleniti animi odit et nulla quam voluptas ea rerum nam quasi quidem voluptate consectetur.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="Card" style="width: 18rem;">
+        <img class= "Card__Img" src="assets/img/Marketing-Digital.png" class="card-img-top" alt="Marketing_digital">
+        <div class="card-body">
+          <h5 class="Card_Tittle" class="card-title">Marketing Digital</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo quos illum enim labore iusto molestias deleniti animi odit et nulla quam voluptas ea rerum nam quasi quidem voluptate consectetur.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="Card" style="width: 18rem;">
+        <img class= "Card__Img" src="assets/img/Inteligencia-Comercial.png" class="card-img-top" alt="Inteligencia_comercial">
+        <div class="card-body">
+          <h5 class="Card_Tittle" class="card-title">Inteligencia Comercial</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo quos illum enim labore iusto molestias deleniti animi odit et nulla quam voluptas ea rerum nam quasi quidem voluptate consectetur.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="Card" style="width: 18rem;">
+        <img class= "Card__Img" src="assets/img/Consultorias.png" class="card-img-top" alt="Consultorias">
+        <div class="card-body">
+          <h5 class="Card_Tittle" class="card-title">Consultorias</h5>
+          <p class="Card_Description" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo quos illum enim labore iusto molestias deleniti animi odit et nulla quam voluptas ea rerum nam quasi quidem voluptate consectetur.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+
+<!-- <section class="Servicios">
+
   <div class="Card">
     <img class= "Card__Img" src="assets/img/Desarrollo-Web.png" alt="">
     <h2 Class="Card_Tittle">Desarrollo Web</h2>
@@ -173,34 +229,46 @@
 </section>
 
 <!-- ======= Footer ======= -->
-<footer class="footer">
-  <a href="index.html"><img src="assets/img/logo_horizontal.png" alt="Logo Cydonia" width="120"></a>
 
-<nav Class="MenuFooter">
-  <ul>
-    <li><a  href="index.html">Home</a></li>
-    <li><a  href="pages/servicios.html">Servicios</a></li>
-    <li><a  href="pages/proyectos.html">Proyectos</a></li>
-    <li><a  href="pages/nosotros.html">Nosotros</a></li>
-    <li><a  href="pages/contacto.html">Contacto</a></li>
-  </ul>
-</nav><!-- .navbar -->
+<footer class="py-4" id="footer">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-3">
+      <a href="index.html"><img src="assets/img/logo_horizontal.png" alt="Logo Cydonia" width="120"></a>
+    </div>
+
+
+      <div class="col-3">
+        <h5>Menú</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="pages/servicios.html" class="nav-link p-0 text-muted">Servicios</a></li>
+          <li class="nav-item mb-2"><a href="pages/proyectos.html" class="nav-link p-0 text-muted">Proyectos</a></li>
+          <li class="nav-item mb-2"><a href="pages/nosotros.html" class="nav-link p-0 text-muted">Nosotros</a></li>
+          <li class="nav-item mb-2"><a href="pages/contacto.html" class="nav-link p-0 text-muted">AbouContacto</a></li>
+        </ul>
+      </div>
+
 
 <!-- ======= Capturador Email Footer ======= -->
-<div>
-  <p>¿Quieres estar al tanto de nuestras actualizaciones?</p>
-  <form action="" method="post">
-    <input type="email" name="email" placeholder="Ingresa tu Email"><input type="submit" value="Suscribete">
-  </form>
-</div>
-<br>
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Suscribete a nuestro newsletter</h5>
+          <p>¿Quieres estar al tanto de nuestras actualizaciones?</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Ingresa tu email</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+            <button class="btn btn-primary" type="button">Suscribete</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-<!-- ======= Copyright ======= -->
-<div>
-  &copy; Copyright <strong><span>Cydonia</span></strong>. Todos los derechos reservados.
-</div>
-
-
+    <!-- ======= Copyright ======= -->
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>© 2022 Cydonia SpA. Todos los derechos reservados.</p>
+    </div>
 
 </footer>                        
 <!-- End Footer -->    
@@ -208,7 +276,6 @@
 <!-- Scripts -->
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
 <script src="js/wow.min.js"></script>
 <script> new WOW().init();</script>
 
