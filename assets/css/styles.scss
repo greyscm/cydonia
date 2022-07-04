@@ -71,17 +71,18 @@ $fondo-gradiente: linear-gradient(to right top, #ff8bcf, #f0a1e7, #e2b6f6, #d7c8
                 font-size: 14px;
                 padding: 14px 16px;
                 transition: all 0.3 ease 0s;
+            }
 
-                &hover:not(.active){
-                    color: #5d51dc;
-                 }
-
-                .active{
+            :hover:not(.active){
                 color: #5d51dc;
                 }
-            }    
+
+            .active{
+            color: #5d51dc;
+            }
         }
     }
+
     
     button{
         margin-left: 20px;

@@ -53,10 +53,10 @@ li a {
   padding: 14px 16px;
   transition: all 0.3 ease 0s;
 }
-#nav__list li ahover:not(.active) {
+#nav__list li :hover:not(.active) {
   color: #5d51dc;
 }
-#nav__list li a .active {
+#nav__list li .active {
   color: #5d51dc;
 }
 
