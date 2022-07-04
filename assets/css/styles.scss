@@ -1,0 +1,223 @@
+// Variables
+$color-principal: #cccccc;
+$color-titulos: #ccc;
+$color-parrafo: #ccc;
+$color-fondo: #ccc;
+
+
+// Estilo Global
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: "Montserrat";
+        color: #333333;
+        background-color: #FFFFFF;
+    } 
+    
+    // Estilos
+
+    // Estilo Barra Navegadora
+
+    #navbar {
+        transition: all 0.5s;
+        padding: 20px 0;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background-color: #ffffff;
+        min-height: 12vh;
+        font-family: "Montserrat", sans-serif;
+        height: 0px;
+    }
+    
+    li{
+
+        a{ 
+            font-weight: 500;
+            font-size: 16px;
+            color: #555555;
+            text-decoration: none;
+        }
+
+    }
+    
+    #logo {
+        cursor: pointer;
+        justify-items: start;
+        margin-left: 30px;
+        width: 50%;
+    }
+    
+    #nav__list{
+        display: flex;
+        align-content: flex-end;
+        width: 20%;
+        align-items: center;
+    }
+    
+    #nav__list li {
+        list-style-type: none;
+    }
+    
+    #nav__list a{
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 14px 16px;
+    }
+    
+    #nav__list li a:hover:not(.active){
+       color: #5d51dc;
+    }
+    
+    #nav__list li a.active{
+        color: #5d51dc;
+    }
+    
+    #nav__list li a{
+        transition: all 0.3 ease 0s;
+    }
+    
+    button{
+        margin-left: 20px;
+        padding: 9px 25px;
+        background-color: rgba(68, 175, 218, 1);
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3 ease 0s;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    button:hover{
+        background-color: rgba(82, 119, 240, 0.8);
+    }
+    /* Estilo Hero Banner */
+    
+    .MainGrid{
+    }
+    
+    .Hero{
+        background-image: linear-gradient(to right top, #ff8bcf, #f0a1e7, #e2b6f6, #d7c8fe, #d4d7ff, #ccdfff, #c8e7ff, #c9edff, #b9f2ff, #a8f6ff, #98fbff, #8bfff8);
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 1.6em;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .MainGrid .Hero__Titulo{
+        padding-left: 3em;
+    }
+    
+    .MainGrid .Hero__Imagenes{
+        position: relative; left: 0; top: 0;
+    }
+    
+    .MainGrid .Hero__Imagenes .Planeta{
+        animation-name: floating;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 50px;
+        margin-top: 55px;
+        position:absolute;
+        z-index: 1;
+    }
+    
+    .MainGrid .Hero__Imagenes .Cohete{
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
+    }
+    
+    .MainGrid .Hero__Boton{
+        background-color: #5d51dc;
+        border-radius: 20px;
+        text-align: center;
+        height:fit-content;
+        width:max-content;
+        margin-top: 1em;
+            
+    }
+    
+    .MainGrid .Hero__Boton a{
+        color: white !important;
+    }
+    
+    /* Estilo Texto Dinamico*/
+    
+    .Titulo {
+        text-align: center;
+        font-weight: bold;
+        padding: 2em 1em 1em 1em;
+        }
+        
+        .TextoDinamico {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        justify-items: center;
+        gap: 1em;
+        }
+        
+    .TextoDinamico__Subtitulo {
+        padding-left: 2em;
+        }
+        
+    .TextoDinamico__Parrafo {
+         padding-right: 2em;
+        }
+    
+    /* Estilo para Card Servicios */
+    
+    .Servicios {
+    background-color: #DFE5ED;
+    
+    }
+    
+    .Servicios .Card{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+    }
+    
+    .Servicios .Card__Img {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1em;
+    }
+    
+    .Servicios .Card_Tittle{
+        margin-bottom: 0.5em;
+    }
+    
+    .Servicios .Card_Description {
+        margin-bottom: 1em;
+    }
+    
+    #footer{
+    background-color: #DFE4EE;
+    }
+    
